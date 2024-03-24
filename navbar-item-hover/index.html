@@ -3,56 +3,125 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
+    <title>Navbar Item Hover</title>
     <link href="./css/style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="wrapper">
     <header>
-      <div class="navbar-container wrapper">
+      <div class="navbar-container">
         <img src="./assets/logos/logo.svg" alt="Podia Logo" />
         <nav class="navbar">
           <ul class="navbar__links">
             <li class="navbar__link-logo"></li>
             <li class="navbar__link">
-              <a class="navbar__text" href="#">Website</a>
+              <a class="navbar__text" href="#">
+                <span>Website</span>
+                <img
+                  class="arrow-down-icon"
+                  src="./assets/icons/arrow-down.png"
+                  alt="arrow down icon"
+                />
+              </a>
+
               <ul class="subnav">
-                <figure>
-                  <figcaption>Platform</figcaption>
-                  <ul>
-                    <li>Website Builder</li>
-                    <li>Website Examples</li>
-                    <li>Landing Page Examples</li>
-                    <li>Blogging Examples</li>
-                  </ul>
-                </figure>
+                <li>
+                  <figure>
+                    <figcaption class="subnav__heading">Platform</figcaption>
+                    <nav>
+                      <ul class="subnav__list">
+                        <li class="subnav__list-item">Website Builder</li>
+                        <li class="subnav__list-item">Website Examples</li>
+                        <li class="subnav__list-item">Landing Page Examples</li>
+                        <li class="subnav__list-item">Blogging Examples</li>
+                      </ul>
+                    </nav>
+                  </figure>
+                </li>
+                <li class="subnav__divider">
+                  <figure>
+                    <figcaption class="subnav__heading">Features</figcaption>
+                    <nav>
+                      <ul class="subnav__list">
+                        <li class="subnav__list-item">Blogging</li>
+                        <li class="subnav__list-item">Landing pages</li>
+                        <li class="subnav__list-item">Link in bio pages</li>
+                        <li class="subnav__list-item">Portfolio websites</li>
+                        <li class="subnav__list-item">Integrations</li>
+                      </ul>
+                    </nav>
+                  </figure>
+                </li>
               </ul>
             </li>
             <li class="navbar__link">
-              <a href="#" class="navbar__text">Email</a>
+              <a href="#" class="navbar__text">
+                <span>Email</span>
+                <img
+                  class="arrow-down-icon"
+                  src="./assets/icons/arrow-down.png"
+                  alt="arrow down icon"
+                />
+              </a>
               <ul class="subnav">
-                <figure>
-                  <figcaption>Platform</figcaption>
-                  <ul>
-                    <li>Website Builder</li>
-                    <li>Website Examples</li>
-                    <li>Landing Page Examples</li>
-                    <li>Blogging Examples</li>
-                  </ul>
-                </figure>
+                <li>
+                  <figure>
+                    <figcaption class="subnav__heading">Platform</figcaption>
+                    <ul class="subnav__list">
+                      <li class="subnav__list-item">Email Marketing</li>
+                      <li class="subnav__list-item">Email Examples</li>
+                    </ul>
+                  </figure>
+                </li>
+                <li class="subnav__divider">
+                  <figure>
+                    <figcaption class="subnav__heading">Features</figcaption>
+                    <ul class="subnav__list">
+                      <li class="subnav__list-item">Email templates</li>
+                      <li class="subnav__list-item">Email designer</li>
+                      <li class="subnav__list-item">Email forms</li>
+                      <li class="subnav__list-item">Email analytics</li>
+                      <li class="subnav__list-item">Newsletters</li>
+                      <li class="subnav__list-item">Automations</li>
+                      <li class="subnav__list-item">Segmentation</li>
+                    </ul>
+                  </figure>
+                </li>
               </ul>
             </li>
             <li class="navbar__link">
-              <a href="#" class="navbar__text">Sell</a>
+              <a href="#" class="navbar__text">
+                <span>Sell</span>
+                <img
+                  class="arrow-down-icon"
+                  src="./assets/icons/arrow-down.png"
+                  alt="arrow down icon"
+                />
+              </a>
               <ul class="subnav">
-                <figure>
-                  <figcaption>Platform</figcaption>
-                  <ul>
-                    <li>Website Builder</li>
-                    <li>Website Examples</li>
-                    <li>Landing Page Examples</li>
-                    <li>Blogging Examples</li>
-                  </ul>
-                </figure>
+                <li>
+                  <figure>
+                    <figcaption class="subnav__heading">Platform</figcaption>
+                    <ul class="subnav__list">
+                      <li class="subnav__list-item">Online courses</li>
+                      <li class="subnav__list-item">Online courses examples</li>
+                      <li class="subnav__list-item">Digital downloads</li>
+                      <li class="subnav__list-item">Checkout</li>
+                    </ul>
+                  </figure>
+                </li>
+                <li class="subnav__divider">
+                  <figure>
+                    <figcaption class="subnav__heading">Features</figcaption>
+                    <ul class="subnav__list">
+                      <li class="subnav__list-item">Multimedia products</li>
+                      <li class="subnav__list-item">Presell products</li>
+                      <li class="subnav__list-item">Upsells</li>
+                      <li class="subnav__list-item">Coaching</li>
+                      <li class="subnav__list-item">Webinars</li>
+                      <li class="subnav__list-item">Affiliates</li>
+                    </ul>
+                  </figure>
+                </li>
               </ul>
             </li>
             <li class="navbar__link">
@@ -67,14 +136,56 @@
           <li class="navbar__text">
             <a href="#">Login</a>
           </li>
+          <li class="navbar__mobile-menu">
+            <button class="navbar__mobile-btn">
+              <span>Menu</span>
+              <img
+                class="arrow-down-icon"
+                src="./assets/icons/arrow-down.png"
+              />
+            </button>
+          </li>
           <li class="navbar__right-link">
-            <a href="#" class="navbar__text">Sign up for free</a>
+            <a href="#" class="navbar__text btn">Sign up free</a>
           </li>
         </ul>
       </div>
     </header>
-    <section class="wrapper">
-      <h2>Your website, email marketing, and products. All under one roof.</h2>
+    <section class="hero container">
+      <h2 class="hero__heading">
+        Your website, email marketing, and products. All under one roof.
+      </h2>
+      <p class="hero__description">
+        Thousands of people like you use Podia to bring their entire business
+        into a single platform. Podia is free. And as you grow, it has all the
+        tools you’ll need to keep growing.
+      </p>
+      <button class="btn">Get your free account</button>
+
+      <figure>
+        <picture>
+          <source
+            media="(max-width: 480px)"
+            srcset="./assets/img/home-chart-mobile.svg 480w"
+            width="335"
+            sizes="100vw"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="./assets/img/home-chart-desktop.svg 768w"
+            width="768"
+            sizes="100vw"
+          />
+          <!-- WE MUST HAVE AN IMG ELEMENT, OTHERWISE IT WONT WORK -->
+          <img
+            class="hero__image"
+            src="./assets/img/home-chart-desktop.svg"
+            alt="hero chart"
+            width="1264"
+            height="366"
+          />
+        </picture>
+      </figure>
     </section>
   </body>
 </html>
