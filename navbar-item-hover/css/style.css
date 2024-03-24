@@ -1,3 +1,50 @@
+/* ROOT - global.css */
+
+:root {
+  --body-color: #fdfbf9;
+}
+
+/* FONT */
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  src:
+    url(../font/Inter-Regular.woff2) format("woff2"),
+    url(../font/Inter-Regular.woff2) format("woff");
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  src:
+    url(../font/Inter-SemiBold.woff2) format("woff2"),
+    url(../font/Inter-SemiBold.woff2) format("woff");
+}
+
+@font-face {
+  font-display: block;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  src:
+    url(../font/Inter-Bold.woff2) format("woff2"),
+    url(../font/Inter-Bold.woff2) format("woff");
+}
+
+@font-face {
+  font-display: block;
+  font-family: tiempos;
+  font-style: normal;
+  font-weight: 600;
+  src:
+    url(../font/tiempos-headline-web-medium.woff2) format("woff2"),
+    url(../font/tiempos-headline-web-medium.woff2) format("woff");
+}
+
 /* COMMON */
 * {
   margin: 0;
